@@ -87,6 +87,7 @@ public class Application {
 		Car car1 = new Car();
 		Scooter scooter1 = new Scooter();
 		
+		
 		car1.name = "Golf";
 		scooter1.name = "Sprint";
 		
