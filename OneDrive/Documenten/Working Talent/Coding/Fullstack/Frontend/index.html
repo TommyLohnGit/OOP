@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+
+
+    <title>Frontend</title>
+
+</head>
+<body onload="retrieveProducts()">
+
+    <h1>Products</h1>
+
+
+    <table id="ProductTable">
+        
+        <tr>
+            <td><button onclick="retrieveProducts()">Get all Products</button></td>
+        </tr>
+
+    </table>
+
+
+
+    <h2>Input new car</h2>
+
+    <table>
+        <tr>
+            <td>name: <input type="text" id="input-name"></td>
+        </tr>
+        <tr>
+            <td>price: <input type="text" id="input-price"></td>
+        </tr>
+        <tr>
+            <td>availability: 
+                <input type="radio" check="checked" name="availability" id="input-availability-1" value="1"> Yes 
+                <input type="radio"  name="availability" id="input-availability-2" value="0"> No
+            </td>
+        </tr>
+        <tr>
+            <td>amount: <input type="text" id="input-amount"></td>
+        </tr>
+    </table>
+
+
+    <button type="button" onclick="addProduct()">Save</button>
+    <button type="button" onclick="deleteProduct()">Delete</button>
+
+    <td><button onclick="retrieveProducts()">Get all Products</button></td>
+
+    
+</body>
+</html>
